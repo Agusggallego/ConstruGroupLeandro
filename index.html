@@ -92,6 +92,7 @@
 
 <section class="home" id="home">
 
+
    <div class="swiper home-slider">
 
       <div class="swiper-wrapper">
@@ -250,6 +251,7 @@
 <!-- PRODUCTOS PROPIOS -->
 
 <div class="projects-container">
+   <h1 class="heading"> Sobre Nosotros </h1>
 
    <section class="" id="projects">
       <div class="swiper mySwiper">
@@ -364,6 +366,7 @@
 <!-- MARCAS -->
 
 <section class="logo-container">
+   <h1 class="heading"> Marcas Líderes </h1>
    <div class="swiper logo-slider">
       <div class="swiper-wrapper">
          <div class="swiper-slide slide"><img src="images/client-logo-1.png" alt=""></div>
@@ -381,7 +384,7 @@
 
    <section class="contact" id="contact">
 
-      <h1 class="heading"> Donde nos encontramos? </h1>
+      <h1 class="heading"> Encontranos! </h1>
    
       <div class="row">
    
@@ -408,8 +411,19 @@
       <a class="btn" href="#blogs">blogs</a>
    </div>
 
-   <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
-
+   <div class="credit">
+      <h1>Contactanos! </h1>
+      <h3>
+         <ion-icon name="mail-unread-outline"></ion-icon>
+          <a href="#" style="color: #2C3091">Construgroup@gmail.com</a> 
+          
+          <span>
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="" style="color: #b41a1d;">
+               +54 3572 12345
+            </a>
+         </span>
+      </h3>
 </footer>
 
 <!-- footer section ends -->
@@ -435,23 +449,25 @@ lightGallery(document.querySelector('.projects .box-container'));
 
 </script>
 
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper",{
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            loop:true,
-            coverflowEffect:{
-                depth:500,
-                modifer:1,
-                slidesShadows:true,
-                rotate:0,
-                stretch:0
-            }
-        })
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script>
+      var swiper = new Swiper(".mySwiper",{
+         effect: "coverflow",
+         grabCursor: true,
+         centeredSlides: true,
+         slidesPerView: "auto",
+         loop:true,
+         coverflowEffect:{
+            depth:500,
+            modifer:1,
+            slidesShadows:true,
+            rotate:0,
+            stretch:0
+         }
+      })
+   </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
