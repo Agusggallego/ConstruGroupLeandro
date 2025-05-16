@@ -708,29 +708,22 @@ section {
 
 
 /*GALERIA DE IMAGENES*/
+#projects{
 .swiper{
     width: 100%;
     padding: 150px 0 50px 0;
 }
 .swiper-slide{
     width: 600px;
-    height: 600px;
+    height: 625px;
     background-color: var(--white);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     padding: 40px;
     text-align: center;
+    border-radius: 5%;
 }
-.icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
 }
-.icons i{
-    font-size: 20px;
-    color: #fff;
 
-}
 .icons img{
     width: 120px;
 }
@@ -766,7 +759,7 @@ section {
 .btn-1{
     display: inline-block;
     padding: 13px 55px;
-    border: 1px solid var(--yellow);
+    border: 2px solid var(--yellow);
     border-radius: 25px;
     text-decoration: none;
     color: var(--yellow);
