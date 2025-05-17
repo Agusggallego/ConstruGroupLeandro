@@ -96,7 +96,7 @@ form.addEventListener('submit', function(event) {
   const telefono = telefonoInput.value.trim();
   const mensaje = mensajeInput.value.trim();
 
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const telefonoRegex = /^[0-9]{8,}$/;
   const inputSanitizer = /[<>{}();'"\\]/;
 
