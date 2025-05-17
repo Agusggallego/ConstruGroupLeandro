@@ -1,5 +1,7 @@
 let navbar = document.querySelector('.header .navbar');
 let contactInfo = document.querySelector('.contact-info');
+/*Contador */
+let allvalues = document.querySelectorAll(".value");
 
 document.querySelector('#menu-btn').onclick = () =>{
    navbar.classList.toggle('active');
@@ -18,46 +20,31 @@ window.onscroll = () =>{
    contactInfo.classList.remove('active');
 }
 
+/*Contador */
+
+allvalues.forEach((singlevalue) => {
+   let startValue = 0;
+   let endValue = parseInt(singlevalue.getAttribute("data-value"));
+   let duration = Math.floor(2000 / endValue); // más rápido que 20000
+
+   let counter = setInterval(() => {
+      startValue += 1;
+      singlevalue.textContent = startValue;
+      if (startValue === endValue) {
+         clearInterval(counter);
+      }
+   }, duration);
+});
+
+
+
+
 var swiper = new Swiper(".home-slider", {
    loop:true,
    grabCursor:true,
    navigation: {
      nextEl: ".swiper-button-next",
      prevEl: ".swiper-button-prev",
-   },
-});
-
-var swiper = new Swiper(".reviews-slider", {
-   loop:true,
-   grabCursor:true,
-   spaceBetween: 20,
-   breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      991: {
-        slidesPerView: 3,
-      },
-   },
-});
-
-var swiper = new Swiper(".blogs-slider", {
-   loop:true,
-   grabCursor:true,
-   spaceBetween: 20,
-   breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      991: {
-        slidesPerView: 3,
-      },
    },
 });
 
