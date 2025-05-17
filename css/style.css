@@ -715,7 +715,7 @@ section {
 }
 .swiper-slide{
     width: 600px;
-    height: 625px;
+    height: 500px;
     background-color: var(--white);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     padding: 40px;
