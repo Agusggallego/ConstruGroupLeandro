@@ -361,6 +361,29 @@ section {
 .home .swiper-button-prev {
   right: 7rem;
 }
+/*MARCAS LIDERES*/
+.swiper-slide img {
+  object-fit: contain;
+}
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  pointer-events: none;
+  user-select: none;
+  filter: grayscale(100%); /*si lo quiere a color eliminar esto*/
+}
+.logo-container .swiper-slide {
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+  height: 150px; /* o lo que necesites */
+}
+
+
 
 .about .row {
   display: flex;
@@ -676,16 +699,7 @@ section {
   line-height: 2;
 }
 
-.logo-container {
-  text-align: center;
-}
-.logo-container img {
-  height: 10rem;
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
+
 
 .footer {
   text-align: center;
