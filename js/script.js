@@ -2,8 +2,6 @@ let navbar = document.querySelector('.header .navbar');
 let contactInfo = document.querySelector('.contact-info');
 /*Contador */
 let allvalues = document.querySelectorAll(".value");
-/*GMAIL*/
-const btn = document.getElementById('button');
 
 
 document.querySelector('#menu-btn').onclick = () =>{
@@ -68,13 +66,13 @@ var swiper = new Swiper(".logo-slider", {
    },
 });
 
-
+const btn = document.getElementById('button');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Enviando...';
+   btn.value = 'Sending...';
 
    const serviceID = 'default_service';
    const templateID = 'template_zghn3y7';
@@ -82,7 +80,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Enviado!');
+      alert('Sent!');
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
