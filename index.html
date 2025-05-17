@@ -336,23 +336,43 @@
 
    <section class="contact" id="contact">
 
-      <h1 class="heading"> contact us </h1>
+      <h1 class="heading">¡ Estemos en contacto !</h1>
    
       <div class="row">
    
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.3044693257357!2d-64.10971452349494!3d-31.460809698401942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3ac6b430283%3A0x61d4a3f016876242!2sConstruGroup!5e0!3m2!1ses-419!2sar!4v1747508108178!5m2!1ses-419!2sar" width="600" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.3044693257357!2d-64.10971452349494!3d-31.460809698401942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3ac6b430283%3A0x61d4a3f016876242!2sConstruGroup!5e0!3m2!1ses-419!2sar!4v1747508108178!5m2!1ses-419!2sar" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    
-         <form action="">
-            <h3>get in touch</h3>
-            <input type="text" placeholder="name" class="box">
-            <input type="email" placeholder="email" class="box">
-            <input type="number" placeholder="phone" class="box">
-            <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
-         </form>
+         <form id="form">
+            <div class="field">
+               <label for="empresa_id"></label>
+               <input type="text" name="empresa_id" id="empresa_id" class="box" placeholder="Empresa">
+            </div>
+            <div class="field">
+               <label for="name"></label>
+               <input type="text" name="name" id="name" class="box" class="box" placeholder="Nombre Completo">
+            </div>
+            <div class="field">
+               <label for="id_gmail"></label>
+               <input type="text" name="id_gmail" id="id_gmail" class="box" placeholder="Gmail">
+            </div>
+
+            <div class="field">
+               <label for="tel_num"></label>
+               <input type="text" name="tel_num" id="tel_num" class="box" placeholder="Teléfono">
+            </div>
+
+            
+            <div class="field">
+               <label for="message"></label>
+               <textarea type="text" name="message" id="message" class="box" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+
+
+            <input type="submit" id="button" value="Enviar" class="btn" >
+            </form>
    
       </div>
-   
+
    </section>
 
 </div>
@@ -465,6 +485,11 @@ lightGallery(document.querySelector('.projects .box-container'));
    </script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<script type="text/javascript">
+  emailjs.init('DJFnNfJKQoFqQUC34')
+</script>
 </body>
 </html>
