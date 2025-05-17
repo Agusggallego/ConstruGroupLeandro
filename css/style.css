@@ -579,6 +579,27 @@ section {
 .error {
   border: 1px solid red !important;
 }
+/*LINK DE WHATSAPP*/
+.whatsapp-container-desktop {
+position: fixed;
+bottom: 40px; /* Ajusta la distancia desde abajo según tu preferencia */
+right: 40px; /* Ajusta la distancia desde la derecha según tu preferencia */
+z-index: 1009; /* Asegura que esté sobre otros elementos */
+}
+
+.whatsapp-button-desktop {
+transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button-desktop:hover {
+transform: scale(1.1); /* Ajusta el valor según tu preferencia para el zoom */
+}
+.whatsapp-container-desktop:hover .whatsapp-tooltip-desktop {
+visibility: visible;
+opacity: 1;
+}
+
+
 
 
 .footer {
