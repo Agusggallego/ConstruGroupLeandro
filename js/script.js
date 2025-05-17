@@ -2,6 +2,9 @@ let navbar = document.querySelector('.header .navbar');
 let contactInfo = document.querySelector('.contact-info');
 /*Contador */
 let allvalues = document.querySelectorAll(".value");
+/*GMAIL*/
+const btn = document.getElementById('button');
+
 
 document.querySelector('#menu-btn').onclick = () =>{
    navbar.classList.toggle('active');
@@ -36,9 +39,6 @@ allvalues.forEach((singlevalue) => {
    }, duration);
 });
 
-
-
-
 var swiper = new Swiper(".home-slider", {
    loop:true,
    grabCursor:true,
@@ -66,4 +66,25 @@ var swiper = new Swiper(".logo-slider", {
         slidesPerView: 5,
       },
    },
+});
+
+
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_zghn3y7';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Enviado!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
 });
