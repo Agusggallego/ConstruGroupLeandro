@@ -25,7 +25,7 @@ window.onscroll = () =>{
 allvalues.forEach((singlevalue) => {
    let startValue = 0;
    let endValue = parseInt(singlevalue.getAttribute("data-value"));
-   let duration = Math.floor(2000 / endValue); // más rápido que 20000
+   let duration = Math.floor(3000 / endValue); // más rápido que 20000
 
    let counter = setInterval(() => {
       startValue += 1;
