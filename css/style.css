@@ -784,6 +784,7 @@ section {
 }
 /*GALERIA DE IMAGENES*/
 
+
 @media (max-width: 1200px) {
   section {
     padding: 3rem 2rem;
@@ -798,7 +799,7 @@ section {
 }
 @media (max-width: 991px) {
   html {
-    font-size: 55%;
+    font-size: 40%;
   }
   .header .flex #menu-btn {
     display: inline-block;
