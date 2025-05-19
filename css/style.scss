@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 :root {
-  --yellow:#b41a1d;
+  --yellow:yellow;
   --black:#2C3091;
   --white:#fff;
   --light-color:#666;
@@ -362,6 +362,7 @@ section {
   right: 7rem;
 }
 /*MARCAS LIDERES*/
+#marcas{
 .swiper-slide img {
   object-fit: contain;
 }
@@ -374,6 +375,7 @@ section {
   user-select: none;
   filter: grayscale(100%); /*si lo quiere a color eliminar esto*/
 }
+
 .logo-container .swiper-slide {
   display: flex;
   justify-content: center;
@@ -382,6 +384,8 @@ section {
   align-items: center;
   height: 150px; /* o lo que necesites */
 }
+}
+
 
 
 
@@ -623,12 +627,15 @@ opacity: 1;
 
 
 /*GALERIA DE IMAGENES*/
-#projects{
-.swiper{
+/*GALERIA DE IMAGENES*/
+
+#projects {
+  .swiper {
     width: 100%;
-    padding: p 0 50px 0;
-}
-.swiper-slide{
+    padding: 0 0 50px 0;
+  }
+
+  .swiper-slide {
     width: 600px;
     height: 450px;
     background-color: var(--white);
@@ -636,43 +643,51 @@ opacity: 1;
     padding: 40px;
     text-align: center;
     border-radius: 5%;
-}
+  }
 }
 
-.icons img{
-    width: 100%;
-    padding-bottom: 2rem;
+.icons img {
+  width: 100%;
+  padding-bottom: 2rem;
 }
-.product-content{
-    display: flex;
-    justify-content: space-between;
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.product-txt{
-    flex-basis: 50%;
-    text-align: left;
+
+.product-txt {
+  flex-basis: 50%;
+  text-align: left;
 }
-.product-txt span{
-    font-size: 25px;
-    color: var(--yellow);
-    font-weight: bold;
+
+.product-txt span {
+  font-size: 25px;
+  color: var(--yellow);
+  font-weight: bold;
 }
-.product-txt h3{
-    font-size: 20px;
-    color: var(--black);
-    text-transform: uppercase; 
+
+.product-txt h3 {
+  font-size: 20px;
+  color: var(--black);
+  text-transform: uppercase;
 }
-.product-txt p{
-    font-size: 15px;
-    color: var(--black);
-    padding-top: 1rem;
+
+.product-txt p {
+  font-size: 15px;
+  color: var(--black);
+  padding-top: 1rem;
 }
-.product-img{
-    flex-basis: 50%;
-    text-align: right;
+
+.product-img {
+  flex-basis: 50%;
+  text-align: right;
 }
-.product-img img{
-    width: 200px;
-    padding-top: 2rem;
+
+.product-img img {
+  width: 200px;
+  padding-top: 2rem;
 }
 .btn-1{
     display: inline-block;
@@ -683,19 +698,12 @@ opacity: 1;
     color: var(--yellow);
     margin-top: 50px;
 }
-/*GALERIA DE IMAGENES*/
 
 
 @media (max-width: 1200px) {
   section {
-    padding: 3rem 2rem;
+    padding: 2rem 1rem;
   }
-    .swiper-slide {
-        width: 90%;
-    }
-    .product-img img {
-        width: 180px;
-    }
   
 }
 @media (max-width: 991px) {
@@ -725,28 +733,9 @@ opacity: 1;
     display: block;
     margin: 2rem;
   }
-      .product-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product-txt,
-    .product-img {
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    .product-txt {
-        text-align: center;
-    }
-
-    .product-img img {
-        width: 160px;
-    }
-
-    .btn-1 {
-        padding: 10px 40px;
-    }
+  .btn-1 {
+    padding: 10px 40px;
+  }
 }
 @media (max-width: 768px) {
   .header .flex .search-form {
@@ -764,30 +753,6 @@ opacity: 1;
   .home .slide .content h3 {
     font-size: 3rem;
   }
-  .swiper {
-        padding: 100px 0 40px 0;
-    }
-
-    .icons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .product-txt span {
-        font-size: 22px;
-    }
-
-    .product-txt h3 {
-        font-size: 18px;
-    }
-
-    .product-txt p {
-        font-size: 13px;
-    }
-
-    .product-img img {
-        width: 140px;
-    }
 }
 @media (max-width: 450px) {
   html {
@@ -796,32 +761,23 @@ opacity: 1;
   .about .row .content h3 {
     font-size: 2.5rem;
   }
-  .swiper-slide {
-        padding: 20px;
-    }
+  .btn-1 {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+  .product-img img {
+    width: 120px;
+  }
 
-    .icons img {
-        width: 90px;
-    }
+  .product-txt span {
+    font-size: 18px;
+  }
 
-    .btn-1 {
-        padding: 10px 30px;
-        font-size: 14px;
-    }
+  .product-txt h3 {
+    font-size: 16px;
+  }
 
-    .product-txt span {
-        font-size: 20px;
-    }
-
-    .product-txt h3 {
-        font-size: 16px;
-    }
-
-    .product-txt p {
-        font-size: 12px;
-    }
-
-    .product-img img {
-        width: 120px;
-    }
+  .product-txt p {
+    font-size: 13px;
+  }
 }/*#
