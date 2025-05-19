@@ -574,10 +574,10 @@ section {
   display: block;
 }
 .success {
-  border: 1px solid green !important;
+  border: 2px solid green !important;
 }
 .error {
-  border: 1px solid red !important;
+  border: 2px solid red !important;
 }
 /*LINK DE WHATSAPP*/
 .whatsapp-container-desktop {
