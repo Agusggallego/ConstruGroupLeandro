@@ -366,6 +366,7 @@ section {
 .swiper-slide img {
   object-fit: contain;
 }
+}
 .logo-container img {
   max-width: 100%;
   height: auto;
@@ -384,7 +385,7 @@ section {
   align-items: center;
   height: 150px; /* o lo que necesites */
 }
-}
+
 
 
 
